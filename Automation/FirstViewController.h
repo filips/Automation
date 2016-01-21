@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DetailViewController.h"
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UITableViewController <NSNetServiceBrowserDelegate, UITableViewDelegate, UITableViewDataSource> {
+    NSNetServiceBrowser* nb;
+    NSMutableArray* servers;
+}
 
 
 @end

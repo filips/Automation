@@ -16,6 +16,7 @@
 		DC0E5EFA1C50328600D4F155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC0E5EF81C50328600D4F155 /* LaunchScreen.storyboard */; };
 		DC0E5F051C50328600D4F155 /* AutomationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0E5F041C50328600D4F155 /* AutomationTests.m */; };
 		DC0E5F101C50328600D4F155 /* AutomationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0E5F0F1C50328600D4F155 /* AutomationUITests.m */; };
+		DC849E941C5040B2003B450C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC849E931C5040B2003B450C /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		DC0E5F0B1C50328600D4F155 /* AutomationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutomationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC0E5F0F1C50328600D4F155 /* AutomationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutomationUITests.m; sourceTree = "<group>"; };
 		DC0E5F111C50328600D4F155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC849E921C5040B2003B450C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		DC849E931C5040B2003B450C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				DC0E5EEB1C50328600D4F155 /* AppDelegate.m */,
 				DC0E5EED1C50328600D4F155 /* FirstViewController.h */,
 				DC0E5EEE1C50328600D4F155 /* FirstViewController.m */,
+				DC849E921C5040B2003B450C /* DetailViewController.h */,
+				DC849E931C5040B2003B450C /* DetailViewController.m */,
 				DC0E5EF01C50328600D4F155 /* SecondViewController.h */,
 				DC0E5EF11C50328600D4F155 /* SecondViewController.m */,
 				DC0E5EF31C50328600D4F155 /* Main.storyboard */,
@@ -212,6 +217,7 @@
 				TargetAttributes = {
 					DC0E5EE31C50328600D4F155 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 59TCTNUBMQ;
 					};
 					DC0E5EFF1C50328600D4F155 = {
 						CreatedOnToolsVersion = 7.2;
@@ -275,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC849E941C5040B2003B450C /* DetailViewController.m in Sources */,
 				DC0E5EF21C50328600D4F155 /* SecondViewController.m in Sources */,
 				DC0E5EEC1C50328600D4F155 /* AppDelegate.m in Sources */,
 				DC0E5EEF1C50328600D4F155 /* FirstViewController.m in Sources */,
@@ -419,10 +426,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Automation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sandborg.Automation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -430,10 +440,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Automation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sandborg.Automation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -504,6 +517,7 @@
 				DC0E5F161C50328600D4F155 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC0E5F171C50328600D4F155 /* Build configuration list for PBXNativeTarget "AutomationTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +526,7 @@
 				DC0E5F191C50328600D4F155 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC0E5F1A1C50328600D4F155 /* Build configuration list for PBXNativeTarget "AutomationUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +535,7 @@
 				DC0E5F1C1C50328600D4F155 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
