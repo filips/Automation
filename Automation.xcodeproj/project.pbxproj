@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		DC0E5EE91C50328600D4F155 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0E5EE81C50328600D4F155 /* main.m */; };
 		DC0E5EEC1C50328600D4F155 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0E5EEB1C50328600D4F155 /* AppDelegate.m */; };
-		DC0E5EEF1C50328600D4F155 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0E5EEE1C50328600D4F155 /* FirstViewController.m */; };
-		DC0E5EF21C50328600D4F155 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0E5EF11C50328600D4F155 /* SecondViewController.m */; };
+		DC0E5EEF1C50328600D4F155 /* DeviceBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0E5EEE1C50328600D4F155 /* DeviceBrowserController.m */; };
 		DC0E5EF51C50328600D4F155 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC0E5EF31C50328600D4F155 /* Main.storyboard */; };
 		DC0E5EF71C50328600D4F155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC0E5EF61C50328600D4F155 /* Assets.xcassets */; };
 		DC0E5EFA1C50328600D4F155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC0E5EF81C50328600D4F155 /* LaunchScreen.storyboard */; };
@@ -41,10 +40,8 @@
 		DC0E5EE81C50328600D4F155 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DC0E5EEA1C50328600D4F155 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DC0E5EEB1C50328600D4F155 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DC0E5EED1C50328600D4F155 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		DC0E5EEE1C50328600D4F155 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		DC0E5EF01C50328600D4F155 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		DC0E5EF11C50328600D4F155 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		DC0E5EED1C50328600D4F155 /* DeviceBrowserController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceBrowserController.h; sourceTree = "<group>"; };
+		DC0E5EEE1C50328600D4F155 /* DeviceBrowserController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceBrowserController.m; sourceTree = "<group>"; };
 		DC0E5EF41C50328600D4F155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC0E5EF61C50328600D4F155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC0E5EF91C50328600D4F155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -109,12 +106,10 @@
 			children = (
 				DC0E5EEA1C50328600D4F155 /* AppDelegate.h */,
 				DC0E5EEB1C50328600D4F155 /* AppDelegate.m */,
-				DC0E5EED1C50328600D4F155 /* FirstViewController.h */,
-				DC0E5EEE1C50328600D4F155 /* FirstViewController.m */,
+				DC0E5EED1C50328600D4F155 /* DeviceBrowserController.h */,
+				DC0E5EEE1C50328600D4F155 /* DeviceBrowserController.m */,
 				DC849E921C5040B2003B450C /* DetailViewController.h */,
 				DC849E931C5040B2003B450C /* DetailViewController.m */,
-				DC0E5EF01C50328600D4F155 /* SecondViewController.h */,
-				DC0E5EF11C50328600D4F155 /* SecondViewController.m */,
 				DC0E5EF31C50328600D4F155 /* Main.storyboard */,
 				DC0E5EF61C50328600D4F155 /* Assets.xcassets */,
 				DC0E5EF81C50328600D4F155 /* LaunchScreen.storyboard */,
@@ -282,9 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC849E941C5040B2003B450C /* DetailViewController.m in Sources */,
-				DC0E5EF21C50328600D4F155 /* SecondViewController.m in Sources */,
 				DC0E5EEC1C50328600D4F155 /* AppDelegate.m in Sources */,
-				DC0E5EEF1C50328600D4F155 /* FirstViewController.m in Sources */,
+				DC0E5EEF1C50328600D4F155 /* DeviceBrowserController.m in Sources */,
 				DC0E5EE91C50328600D4F155 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

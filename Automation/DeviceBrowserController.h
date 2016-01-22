@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  DeviceBrowserController.h
 //  Automation
 //
 //  Created by Filip Sandborg-Olsen on 20/01/16.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "DetailViewController.h"
 
-@interface FirstViewController : UITableViewController <NSNetServiceBrowserDelegate, UITableViewDelegate, UITableViewDataSource> {
+@interface DeviceBrowserController : UITableViewController <NSNetServiceBrowserDelegate, UITableViewDelegate, UITableViewDataSource> {
     NSMutableArray* servers;
 }
 

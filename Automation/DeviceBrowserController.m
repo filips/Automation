@@ -1,18 +1,18 @@
 //
-//  FirstViewController.m
+//  DeviceBrowserController.m
 //  Automation
 //
 //  Created by Filip Sandborg-Olsen on 20/01/16.
 //  Copyright © 2016 Sandborg. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "DeviceBrowserController.h"
 
-@interface FirstViewController ()
+@interface DeviceBrowserController ()
 
 @end
 
-@implementation FirstViewController
+@implementation DeviceBrowserController
 
 @synthesize nb;
 
@@ -56,9 +56,9 @@
         [servers addObject:service];
     }
     
-    if(moreComing) return;
-    
-    [[self tableView] reloadData];
+    if(!moreComing) {
+        [[self tableView] reloadData];
+    }
 }
 
 -(void) netServiceBrowser:(NSNetServiceBrowser *)browser didRemoveService:(NSNetService *)service moreComing:(BOOL)moreComing {
@@ -67,9 +67,9 @@
         [servers removeObject:service];
     }
     
-    if(moreComing) return;
-    
-    [[self tableView] reloadData];
+    if(!moreComing){
+        [[self tableView] reloadData];
+    }
 }
 
 - (void) netServiceBrowser:(NSNetServiceBrowser *)browser didNotSearch:(NSDictionary<NSString *,NSNumber *> *)errorDict {

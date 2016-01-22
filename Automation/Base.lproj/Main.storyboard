@@ -9,7 +9,7 @@
         <!--Devices-->
         <scene sceneID="PV8-Z8-vb8">
             <objects>
-                <tableViewController title="Devices" id="X7x-gj-d7N" customClass="FirstViewController" sceneMemberID="viewController">
+                <tableViewController title="Devices" id="X7x-gj-d7N" customClass="DeviceBrowserController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="qJ7-Ji-MHu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
