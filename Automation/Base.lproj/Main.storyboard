@@ -32,7 +32,13 @@
                             <outlet property="delegate" destination="X7x-gj-d7N" id="CQG-HE-9mO"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Devices" id="tO5-Ja-SOI"/>
+                    <navigationItem key="navigationItem" title="Devices" id="tO5-Ja-SOI">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="G3K-IV-Xnu">
+                            <connections>
+                                <action selector="performRefresh:" destination="X7x-gj-d7N" id="G0z-4g-XLe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="np4-c9-yTS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,11 +99,11 @@
             </objects>
             <point key="canvasLocation" x="2402" y="-432"/>
         </scene>
-        <!--Item-->
+        <!--Devices-->
         <scene sceneID="fH9-vO-ab0">
             <objects>
                 <navigationController id="sWj-tm-U91" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="CEl-AZ-7Mh"/>
+                    <tabBarItem key="tabBarItem" title="Devices" image="second" id="CEl-AZ-7Mh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oMg-f5-vKv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -162,7 +168,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="sWj-tm-U91" kind="relationship" relationship="viewControllers" id="ciZ-c1-oh8"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>

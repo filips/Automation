@@ -10,10 +10,12 @@
 #import "DetailViewController.h"
 
 @interface FirstViewController : UITableViewController <NSNetServiceBrowserDelegate, UITableViewDelegate, UITableViewDataSource> {
-    NSNetServiceBrowser* nb;
     NSMutableArray* servers;
 }
 
+@property (strong) NSNetServiceBrowser* nb;
+
+-(IBAction) performRefresh:(id)sender;
 
 @end
 

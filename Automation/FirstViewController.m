@@ -14,24 +14,30 @@
 
 @implementation FirstViewController
 
+@synthesize nb;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    if(!servers) {
-        servers = [[NSMutableArray alloc] init];
-    }
+    servers = [[NSMutableArray alloc] init];
     
+    nb = [[NSNetServiceBrowser alloc] init];
     if(!nb) {
-        nb = [[NSNetServiceBrowser alloc] init];
-        if(!nb) {
-            NSLog(@"Could not start net service browser..");
-            return;
-        }
-        
-        nb.delegate = (id)self;
+        NSLog(@"Could not start net service browser..");
+        return;
     }
     
+    [nb setDelegate:self];
+}
+
+-(IBAction) performRefresh:(id)sender {
+    if(nb) {
+        [nb stop];
+    }
     [nb searchForServicesOfType:@"_homeauto._tcp." inDomain:@""];
+}
+-(void) viewDidAppear:(BOOL)animated {
+    [self performRefresh:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,6 +71,11 @@
     
     [[self tableView] reloadData];
 }
+
+- (void) netServiceBrowser:(NSNetServiceBrowser *)browser didNotSearch:(NSDictionary<NSString *,NSNumber *> *)errorDict {
+    NSLog(@"Did not search");
+}
+
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"serviceCell"];
